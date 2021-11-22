@@ -113,7 +113,7 @@ public class Voiture {
         for(Garage g : this.garagesVisites()){
             out.println(g + ":");
             for(Stationnement s : myStationnements){
-                if(s.getGarage()==g){
+                if(s.getGarage().equals(g)){
                     out.println("       " + s);
                 }
             }
